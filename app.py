@@ -44,9 +44,9 @@ st.markdown("""
 # --- Sidebar : Logos et Paramètres ---
 col_logo1, col_logo2 = st.sidebar.columns(2)
 with col_logo1:
-    st.image("images/LOGO_CUS.png", width=80)
+    st.image("LOGO_CUS.png", width=80)
 with col_logo2:
-    st.image("images/UM6P Primary Lockup - Web.png", width=80)
+    st.image("UM6P Primary Lockup - Web.png", width=80)
 
 st.sidebar.title("⚙️ Paramètres du Modèle")
 
@@ -144,3 +144,4 @@ st.markdown("""
 # --- Footer ---
 st.markdown("---")
 st.markdown("© 2025 Center of Urban Systems (CUS) - UM6P | Developed for UrbanLifeAI")
+
