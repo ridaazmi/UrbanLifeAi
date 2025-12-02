@@ -71,7 +71,7 @@ with st.form("add_action_form"):
 
 # --- Sélection de l'Action ---
 st.markdown("---")
-st.subheader("🎯 Sélection de l'Intervention à Simuler")
+st.subheader(" Sélection de l'Intervention à Simuler")
 
 action_names = [a["name"] for a in st.session_state.actions]
 selected_action_name = st.selectbox("Choisir une action à simuler :", action_names)
@@ -85,7 +85,7 @@ if selected_action and selected_action["name"] != "Aucune action":
         targets = [targets]
     
     st.markdown("---")
-    st.subheader("📊 Résultats de la Simulation")
+    st.subheader(" Résultats de la Simulation")
     
     for target in targets:
         st.markdown(f"#### 🎯 Impact sur : {target}")
@@ -200,7 +200,7 @@ elif selected_action and selected_action["name"] == "Aucune action":
 
 # --- Tableau Récapitulatif des Actions ---
 st.markdown("---")
-st.subheader("📋 Liste des Interventions Disponibles")
+st.subheader(" Liste des Interventions Disponibles")
 
 actions_df = pd.DataFrame([
     {
@@ -216,7 +216,7 @@ st.dataframe(actions_df, use_container_width=True)
 
 # --- Estimation de Coût (Fictive) ---
 st.markdown("---")
-st.subheader("💰 Estimation de Coût et ROI Social")
+st.subheader(" Estimation de Coût et ROI Social")
 
 if selected_action and selected_action["name"] != "Aucune action":
     # Coûts fictifs basés sur le type d'intervention
@@ -256,3 +256,4 @@ if selected_action and selected_action["name"] != "Aucune action":
 # --- Footer ---
 st.markdown("---")
 st.markdown("© 2025 Center of Urban Systems (CUS) - UM6P | Developed for UrbanLifeAI")
+
