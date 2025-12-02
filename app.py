@@ -4,7 +4,7 @@ from utils import generate_rabat_data, calculate_vulnerability_score
 # --- Configuration de la Page ---
 st.set_page_config(
     page_title="UrbanLifeAI - Rabat",
-    #page_icon="🏙️",
+    page_icon="🏙️",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -65,13 +65,13 @@ df = generate_rabat_data()
 df_scored = calculate_vulnerability_score(df, w_social, w_infra, w_env, w_sante, w_educ, w_secu)
 
 # --- En-tête Principal ---
-st.markdown('<div class="main-header">🏙️ UrbanLifeAI - Tableau de Bord Rabat</div>', unsafe_allow_html=True)
+st.markdown('<div class="main-header"> UrbanLifeAI - Tableau de Bord Rabat</div>', unsafe_allow_html=True)
 st.markdown('<div class="sub-header">Plateforme d\'Analyse et de Simulation pour la Planification Urbaine</div>', unsafe_allow_html=True)
 
 # --- Message de Bienvenue ---
 st.markdown("---")
 st.markdown("""
-### 👋 Bienvenue sur UrbanLifeAI
+###  Bienvenue sur UrbanLifeAI
 
 Cette application constitue un MVP destiné à illustrer un outil d’aide à la décision pour la planification urbaine à Rabat. 
 Elle offre une première démonstration des capacités d’analyse de la vulnérabilité des quartiers selon divers indicateurs socio-économiques 
@@ -144,5 +144,6 @@ st.markdown("""
 # --- Footer ---
 st.markdown("---")
 st.markdown("© 2025 Center of Urban Systems (CUS) - UM6P | Developed for UrbanLifeAI")
+
 
 
