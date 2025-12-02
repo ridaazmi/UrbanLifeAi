@@ -73,9 +73,9 @@ st.markdown("---")
 st.markdown("""
 ### 👋 Bienvenue sur UrbanLifeAI
 
-Cette application est un outil d'aide à la décision pour la planification urbaine de la ville de Rabat. 
-Elle permet d'analyser la vulnérabilité des quartiers selon plusieurs indicateurs socio-économiques et 
-de simuler l'impact de différentes interventions.
+Cette application constitue un MVP destiné à illustrer un outil d’aide à la décision pour la planification urbaine à Rabat. 
+Elle offre une première démonstration des capacités d’analyse de la vulnérabilité des quartiers selon divers indicateurs socio-économiques 
+et de simulation de l’impact d’interventions potentielles.
 
 **Développé par le Center of Urban Systems (CUS) - UM6P**
 """)
@@ -144,3 +144,4 @@ st.markdown("""
 # --- Footer ---
 st.markdown("---")
 st.markdown("© 2025 Center of Urban Systems (CUS) - UM6P | Developed for UrbanLifeAI")
+
