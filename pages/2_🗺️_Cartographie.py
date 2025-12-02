@@ -161,7 +161,7 @@ if geojson_data:
     
     # --- Statistiques de la Carte ---
     st.markdown("---")
-    st.subheader("📊 Statistiques de l'Indicateur Sélectionné")
+    st.subheader(" Statistiques de l'Indicateur Sélectionné")
     
     col_stat1, col_stat2, col_stat3, col_stat4 = st.columns(4)
     
@@ -180,7 +180,7 @@ if geojson_data:
     
     # --- Tableau Récapitulatif ---
     st.markdown("---")
-    st.subheader("📋 Tableau Récapitulatif par Quartier")
+    st.subheader(" Tableau Récapitulatif par Quartier")
     
     # Éviter la duplication de colonnes
     if indicator == "Score Vulnérabilité":
@@ -197,3 +197,4 @@ else:
 # --- Footer ---
 st.markdown("---")
 st.markdown("© 2025 Center of Urban Systems (CUS) - UM6P | Developed for UrbanLifeAI")
+
