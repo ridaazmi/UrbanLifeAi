@@ -71,7 +71,7 @@ with col3:
 
 # --- Tableau des Quartiers Prioritaires ---
 st.markdown("---")
-st.subheader("🎯 Quartiers Prioritaires (Top 5)")
+st.subheader(" Quartiers Prioritaires (Top 5)")
 
 top_5 = df_scored.nlargest(5, "Score Vulnérabilité")[["Nom du quartier", "Score Vulnérabilité", "Population", "Taux de chômage (%)", "Indice de Vétusté (0-10)"]]
 top_5 = top_5.reset_index(drop=True)
@@ -81,7 +81,7 @@ st.dataframe(top_5, use_container_width=True)
 
 # --- Visualisations ---
 st.markdown("---")
-st.subheader("📊 Tableau de Bord Analytique")
+st.subheader(" Tableau de Bord Analytique")
 
 # 1. Scores de Vulnérabilité par Quartier
 col_viz1, col_viz2 = st.columns(2)
@@ -152,7 +152,7 @@ st.plotly_chart(fig_heatmap, use_container_width=True)
 
 # --- Fiche Détaillée par Quartier ---
 st.markdown("---")
-st.subheader("🏘️ Fiche Détaillée par Quartier")
+st.subheader(" Fiche Détaillée par Quartier")
 selected_quartier = st.selectbox("Sélectionnez un quartier pour voir les détails :", df_scored["Nom du quartier"].unique())
 
 if selected_quartier:
@@ -247,3 +247,4 @@ with col_exp2:
 # --- Footer ---
 st.markdown("---")
 st.markdown("© 2025 Center of Urban Systems (CUS) - UM6P | Developed for UrbanLifeAI")
+
