@@ -4,7 +4,7 @@ from utils import generate_rabat_data, calculate_vulnerability_score
 # --- Configuration de la Page ---
 st.set_page_config(
     page_title="UrbanLifeAI - Rabat",
-    page_icon="🏙️",
+    #page_icon="🏙️",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -144,4 +144,5 @@ st.markdown("""
 # --- Footer ---
 st.markdown("---")
 st.markdown("© 2025 Center of Urban Systems (CUS) - UM6P | Developed for UrbanLifeAI")
+
 
