@@ -82,7 +82,7 @@ et de simulation de l’impact d’interventions potentielles.
 
 # --- Navigation vers les Pages ---
 st.markdown("---")
-st.markdown("### 📍 Navigation")
+st.markdown("###  Navigation")
 
 col1, col2, col3 = st.columns(3)
 
@@ -112,7 +112,7 @@ with col3:
 
 # --- KPIs Rapides ---
 st.markdown("---")
-st.markdown("### 📈 Vue d'Ensemble Rapide")
+st.markdown("###  Vue d'Ensemble Rapide")
 
 col_kpi1, col_kpi2, col_kpi3 = st.columns(3)
 
@@ -144,6 +144,7 @@ st.markdown("""
 # --- Footer ---
 st.markdown("---")
 st.markdown("© 2025 Center of Urban Systems (CUS) - UM6P | Developed for UrbanLifeAI")
+
 
 
 
